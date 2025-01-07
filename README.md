@@ -7,3 +7,7 @@ A ridiculously over-the-top tool that generates brute force code to check if num
 - Generated code checks if each number is odd or even.
 - Copy code to clipboard or download it as a .txt file.
 - Perfect for testing your patience (and sense of humor).
+
+## Screenshots:
+
+![Main](https://github.com/user-attachments/assets/10b85e30-4ad1-4b0e-b83f-b570f8b28b91)
