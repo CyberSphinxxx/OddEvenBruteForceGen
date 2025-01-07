@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OddEvenBruteForceGen</title>
-    <link rel="stylesheet" href="/src/styles.css">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OddEvenBruteForceGen</title>
+  <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
   <div class="container">
-    <h2>Brute Force Generator</h2>
-    <label for="language">Choose a Programming Language:</label>
-    <select id="language">
-      <option value="python">Python</option>
-      <option value="javascript">JavaScript</option>
-    </select>
-    
-    <label for="count">Enter Number Range:</label>
-    <input type="number" id="count" min="1" placeholder="Enter the number range (e.g., 10)">
-
-    <button onclick="generate()">Generate Code</button>
-
-    <label for="output">Generated Code:</label>
-    <textarea id="output" readonly></textarea>
-
+    <h1>Brute Force Generator</h1>
+    <div class="input-group">
+      <label for="language">Programming Language:</label>
+      <select id="language">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="csharp">C#</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="count">Number Range:</label>
+      <input type="number" id="count" min="1" placeholder="Enter the number range (e.g., 10)">
+    </div>
+    <button onclick="generate()" class="generate-btn">Generate Code</button>
+    <div class="output-container">
+      <label for="output">Generated Code:</label>
+      <textarea id="output" readonly></textarea>
+    </div>
     <div class="buttons">
-      <button onclick="copyToClipboard()">Copy Code</button>
-      <button onclick="downloadCode()">Download Code</button>
+      <button onclick="copyToClipboard()" class="copy-btn">Copy Code</button>
+      <button onclick="downloadCode()" class="download-btn">Download Code</button>
     </div>
   </div>
-
   <script src="/src/script.js"></script>
 </body>
 </html>
+
